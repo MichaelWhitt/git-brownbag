@@ -4,17 +4,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{fontSize: 64, fontWeight: 700}}>Git</div>
+      <ul style={{textAlign: 'left', marginLeft: 400}}>
+        <li>git clone | branch --sort | add | commit | push</li>
+        <li>git checkout | git log --oneline --pretty</li>
+        <li>git commit | revert | reset --soft / --hard </li>
+        <li>git diff | git stash | git apply</li>
+        <li>git aliases</li>
+      </ul>
     </div>
   );
 }
