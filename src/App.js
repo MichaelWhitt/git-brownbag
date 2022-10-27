@@ -11,6 +11,8 @@ function App() {
     'git commit | --amend',
     'git push',
     'git checkout branch or commit | git checkout -b',
+    'git fetch',
+    'git switch',
     'git log | -numAmount --oneline | --pretty',
     'git revert',
     'git reset --soft | --hard',
