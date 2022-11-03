@@ -4,7 +4,6 @@ import ListItem from './ListItem'
 function App() {
 
   const items = [
-    'git clone',
     'git branch | --sort=-committerdate',
     'git add',
     'git status',
