@@ -8,7 +8,7 @@ const ListItem = (props) => {
   }
 
   return(
-    <li onClick={crossOut} style={{textDecoration: cross && 'line-through', fontWeight: 600, fontSize: 40}}>
+    <li onClick={crossOut} style={{textDecoration: cross && 'line-through', fontWeight: 600, fontSize: 20}}>
       {props.children}
     </li>
   )
