@@ -5,7 +5,8 @@ function App() {
 
   const items = [
     'git branch | --sort=-committerdate',
-    'git add',
+    'git add filename',
+    'git rm filename',
     'git status',
     'git commit | --amend -m \'new msg\' ',
     'git push',
