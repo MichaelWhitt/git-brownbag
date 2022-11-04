@@ -18,7 +18,8 @@
 - ### git pull (does git fetch + git merge)
   - git pull --prune (removes local branches if they don't exist on remote repo)
   - git pull --dry-run (does a test run of pull but makes no changes)  
-- ### git checkout branchToCheckout or commitToCheckout 
+- ### git checkout
+  - git checkout branchName or commitHash (switches to branch or commit hash)
   - git checkout -b (create new branch and switch to it) (this is the old way, git switch does the same thing)
 - ### git fetch 
   - git fetch then git log -p HEAD..origin/master (to view fetched changes, this compares local HEAD to remote)
@@ -26,7 +27,9 @@
 - ### git merge
   - git merge branchName (merges commits from another branch sequentially into your current one)
   - git merge branchName --squash (merges one commit that includes every commit on another branch into yours, and adds to staged)
-- ### git switch branchToCheckout | -c newBranchName (create new branch and switch to it)
+- ### git switch
+  - git switch branchName (switches to branch)
+  - git switch -c newBranchName (create new branch and switch to it)
 - ### git log
   - git log -numAmount (limits # of logs shown)
   - git log --oneline (limits each log entry to one line and reduces / abbreviates information shown)
