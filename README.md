@@ -2,44 +2,44 @@ Git Brownbag
 
 Addresses these concepts:
 
-- git's index, worktree, repository
-- git branch 
+- ### git's index, worktree, repository
+- ### git branch
   - git branch --sort=-committerdate (sorts branches by most recent commit activity)
   - git branch -r /--remotes (get remote branch list)
-- git add 
+- ### git add
   - git add . --dry-run (does a test run of add but makes no changes)
-- git status
+- ### git status
   - git status -short (or -s) (shows short version of status log)
-- git commit
+- ### git commit
   - git commit --amend -m 'my new msg' (amends the most recent commit message)
-- git push 
+- ### git push 
   - git push --prune (removes remote branches if they don't exist on remote repo)
   - git push --dry-run (does a test run of add but makes no changes)
-- git pull (does git fetch + git merge)
+- ### git pull (does git fetch + git merge)
   - git pull --prune (removes local branches if they don't exist on remote repo)
   - git pull --dry-run (does a test run of pull but makes no changes)  
-- git checkout branchToCheckout or commitToCheckout 
+- ### git checkout branchToCheckout or commitToCheckout 
   - git checkout -b (create new branch and switch to it) (this is the old way, git switch does the same thing)
-- git fetch 
+- ### git fetch 
   - git fetch then git log -p HEAD..origin/master (to view fetched changes, this compares local HEAD to remote)
   - git fetch --prune origin (removes local branches if they don't exist on remote repo)
-- git switch branchToCheckout | -c newBranchName (create new branch and switch to it)
-- git log
+- ### git switch branchToCheckout | -c newBranchName (create new branch and switch to it)
+- ### git log
   - git log -numAmount (limits # of logs shown)
   - git log --oneline (limits each log entry to one line and reduces / abbreviates information shown)
   - git log -u / -p (shows logs with actual file changes)
   - git log --abbrev-commit (abbreviates the commit hash)
   - git log --reverse (reverses the log output direction, shows oldest log entry first)
   - git log --pretty=format:"%h %ad | %s %d [%an]" --date=short (can use format to format log message style for easier consumption)
-- git revert
+- ### git revert
   - git revert commitHash --no-edit (creates + stages a new commit that exactly inverses the changes instead of deleting the entire commit)
-- git reset 
+- ### git reset 
   - git reset --soft (puts future changes into staged mode)
   - git reset --hard (destroyed all changes and sets back to head)
-- git diff 
+- ### git diff 
   - git diff --cached (shows diff for staged changes instead of only unstaged ones)
-- git show
+- ### git show
   - git show 927850d src/App.js (shows specific commit changes)
-- git stash 
+- ### git stash 
   - git stash show -p stash@{0} (stash is an array of change objects, most recent is stash{0}, next oldest stash@{1}, next oldest stash@{2} etc.)
-- git aliases
+- ### git aliases
