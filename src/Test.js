@@ -1,6 +1,6 @@
 const Test = () => {
   return (
-    <div>
+    <div style={{fontSize: 60, fontWeight: 1000, color: '#909'}}>
       Test
     </div>
   )

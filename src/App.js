@@ -1,6 +1,6 @@
 import './App.css';
 import ListItem from './ListItem'
-import Test from './test'
+import Test from './Test'
 
 function App() {
 
