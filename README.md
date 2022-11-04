@@ -23,6 +23,9 @@
 - ### git fetch 
   - git fetch then git log -p HEAD..origin/master (to view fetched changes, this compares local HEAD to remote)
   - git fetch --prune origin (removes local branches if they don't exist on remote repo)
+- ### git merge
+  - git merge branchName (merges commits from another branch sequentially into your current one)
+  - git merge branchName --squash (merges one commit that includes every commit on another branch into yours, and adds to staged)
 - ### git switch branchToCheckout | -c newBranchName (create new branch and switch to it)
 - ### git log
   - git log -numAmount (limits # of logs shown)
