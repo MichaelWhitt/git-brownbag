@@ -4,20 +4,20 @@ Addresses these concepts:
 
 - git's index, worktree, repository
 - git branch 
-  - git branch --sort=-committerdate 
+  - git branch --sort=-committerdate (sorts branches by most recent commit activity)
   - git branch -r /--remotes (get remote branch list)
 - git add 
-  - git add . --dry-run (does a dry run of add but doesnt execute it)
+  - git add . --dry-run (does a test run of add but makes no changes)
 - git status
   - git status -short (or -s) (shows short version of status log)
 - git commit
   - git commit --amend -m 'my new msg' (amends the most recent commit message)
 - git push 
   - git push --prune (removes remote branches if they don't exist on remote repo)
-  - git push --dry-run (does a dry run of add but doesnt execute it)
+  - git push --dry-run (does a test run of add but makes no changes)
 - git pull (does git fetch + git merge)
   - git pull --prune (removes local branches if they don't exist on remote repo)
-  - git pull --dry-run (does a dry run of pull so you can see what will be pulled without actually pulling)  
+  - git pull --dry-run (does a test run of pull but makes no changes)  
 - git checkout branchToCheckout or commitToCheckout 
   - git checkout -b (create new branch and switch to it) (this is the old way, git switch does the same thing)
 - git fetch 
