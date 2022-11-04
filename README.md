@@ -1,7 +1,6 @@
 ## Git Brownbag
 
 
-
 - ### git's index, worktree, repository
 - ### git branch
   - git branch --sort=-committerdate (sorts branches by most recent commit activity)
@@ -46,7 +45,8 @@
   - git diff --cached (shows diff for staged changes instead of only unstaged ones)
 - ### git show
   - git show 927850d src/App.js (shows specific commit changes)
-- ### git stash (moves changes in a dirty working directory into a stash- an array of stashed changes)
+- ### git stash
+  - stores all the most recent changes in a workspace in a stash (array) and resets the state of the workspace to the prior commit state
   - git stash (equivalent to git stash push, takes current working directory changes and places them in your stash at stash@{0})
   - git stash list (lists stash entries) 
   - git stash show -p stash@{0} (most recent is stash{0}, next oldest stash@{1}, next oldest stash@{2} etc.)
