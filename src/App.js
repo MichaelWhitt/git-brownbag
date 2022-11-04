@@ -5,21 +5,22 @@ import Test from './Test'
 function App() {
 
   const items = [
-    'git branch | --sort=-committerdate',
-    'git add filename',
-    'git rm filename',
+    'git branch',
+    'git add',
     'git status',
-    'git commit | --amend -m \'new msg\' ',
+    'git commit',
     'git push',
-    'git checkout branch or commit | git checkout -b',
+    'git pull',
+    'git checkout',
     'git fetch',
+    'git merge',
     'git switch',
-    'git log | -numAmount --oneline | --pretty',
+    'git log',
     'git revert',
-    'git reset --soft | --hard',
-    'git diff and inspector',
+    'git reset',
+    'git diff',
+    'git show',
     'git stash',
-    'git pop',
     'git aliases'
   ]
 
