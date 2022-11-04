@@ -32,7 +32,7 @@ Addresses these concepts:
   - git log --reverse (reverses the log output direction, shows oldest log entry first)
   - git log --pretty=format:"%h %ad | %s %d [%an]" --date=short (can use format to format log message style for easier consumption)
 - git revert
-  - git revert commitHash (creates a new commit that inverses the changes instead of delete the entire commit)
+  - git revert commitHash --no-edit (creates + stages a new commit that exactly inverses the changes instead of deleting the entire commit)
 - git reset 
   - git reset --soft (puts future changes into staged mode)
   - git reset --hard (destroyed all changes and sets back to head)
