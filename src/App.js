@@ -1,5 +1,6 @@
 import './App.css';
 import ListItem from './ListItem'
+import Test from './test'
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
         </ul>
       </div>
       <div style={{marginTop: -300, fontSize: 75}}>
-        Test
+        <Test />
       </div>
     </div>
   );
