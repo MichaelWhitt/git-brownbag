@@ -55,4 +55,13 @@
     - git stash pop stash@{num} (Takes specific stash entry and adds it to unstaged on current branch)
   - git stash apply (same as pop, but does not remove the stash entry from your stash)
   - git stash clear (completely clears out your stash, removes all entries with no warning!)
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
 - ### git aliases
+  - A way to truncate and customize git commands with or without options (for example, "git upstream" would run "git --set-upstream origin branchName")
+  - #### Two ways to create aliases:
+    - run this command to find your .gitconfig path: git config --list --show-origin (mine was here -> C:/Users/username/.gitconfig)
+      - open the file, find the [alias] code block or create it, and then type nameOfShortcut = actual command
+      - ie. [alias] l = log --oneline
+    - run git config --global alias.shortcutName "actual name of command" for example: git config --global alias.upstream "git push -u origin HEAD"
+      - now you can use "git upstream" which will run "git push -u origin HEAD" for you  
