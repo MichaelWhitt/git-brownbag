@@ -1,6 +1,6 @@
-Git Brownbag
+## Git Brownbag
 
-Addresses these concepts:
+
 
 - ### git's index, worktree, repository
 - ### git branch
