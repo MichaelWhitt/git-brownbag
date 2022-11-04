@@ -63,5 +63,6 @@
     - run this command to find your .gitconfig path: git config --list --show-origin (mine was here -> C:/Users/username/.gitconfig)
       - open the file, find the [alias] code block or create it, and then type nameOfShortcut = actual command
       - ie. [alias] l = log --oneline
-    - run git config --global alias.shortcutName "actual name of command" for example: git config --global alias.upstream "git push -u origin HEAD"
+    - run git config --global alias.shortcutName "actual name of command" 
+      - for example: git config --global alias.upstream "git push -u origin HEAD"
       - now you can use "git upstream" which will run "git push -u origin HEAD" for you  
