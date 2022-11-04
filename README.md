@@ -40,6 +40,13 @@
   - git diff --cached (shows diff for staged changes instead of only unstaged ones)
 - ### git show
   - git show 927850d src/App.js (shows specific commit changes)
-- ### git stash 
-  - git stash show -p stash@{0} (stash is an array of change objects, most recent is stash{0}, next oldest stash@{1}, next oldest stash@{2} etc.)
+- ### git stash (moves changes in a dirty working directory into a stash- an array of stashed changes)
+  - git stash (equivalent to git stash push, takes current working directory changes and places them in your stash at stash@{0})
+  - git stash list (lists stash entries) 
+  - git stash show -p stash@{0} (most recent is stash{0}, next oldest stash@{1}, next oldest stash@{2} etc.)
+  - git stash drop stash@{1} (removes the 2nd entry in the stash array from the stash)
+  - git stash pop (by default, takes the most recent stash item (stash@{0}) and adds it to unstaged in current branch) 
+    - git stash pop stash@{num} (Takes specific stash entry and adds it to unstaged on current branch)
+  - git stash apply (same as pop, but does not remove the stash entry from your stash)
+  - git stash clear (completely clears out your stash, removes all entries with no warning!)
 - ### git aliases
