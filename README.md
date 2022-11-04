@@ -15,7 +15,7 @@ Addresses these concepts:
 - git push 
   - git push --prune (removes remote branches if they don't exist on remote repo)
   - git push --dry-run (does a dry run of add but doesnt execute it)
-- git pull
+- git pull (does git fetch + git merge)
   - git pull --prune (removes local branches if they don't exist on remote repo)
   - git pull --dry-run (does a dry run of pull so you can see what will be pulled without actually pulling)  
 - git checkout branchToCheckout or commitToCheckout 
