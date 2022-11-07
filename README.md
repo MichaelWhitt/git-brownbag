@@ -60,7 +60,7 @@
 - ### git aliases
   - A way to truncate and customize git commands with or without options (for example, "git upstream" would run "git --set-upstream origin branchName")
   - #### Two ways to create aliases:
-    - run this command to find your .gitconfig path: git config --list --show-origin (mine was here -> C:/Users/username/.gitconfig)
+    - run this command to find your .gitconfig path: git config --list --show-origin (Windows Default -> C:/Users/username/.gitconfig)
       - open the file, find the [alias] code block or create it, and then type nameOfShortcut = actual command
       - ie. [alias] l = log --oneline
     - run git config --global alias.shortcutName "actual name of command" 
