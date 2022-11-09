@@ -7,7 +7,7 @@
   - git branch -r /--remotes (get remote branch list)
 - ### git add
   - git add . --dry-run (does a test run of add but makes no changes)
-  - git add -p (allows you to choose which hunk to add to staging among other options)
+  - git add --patch  (or -p, allows you to choose which hunk to add to staging among other options)
 - ### git status
   - git status -short (or -s) (shows short version of status log)
 - ### git commit
