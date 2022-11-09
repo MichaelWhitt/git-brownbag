@@ -7,6 +7,7 @@
   - git branch -r /--remotes (get remote branch list)
 - ### git add
   - git add . --dry-run (does a test run of add but makes no changes)
+  - git add -p (
 - ### git status
   - git status -short (or -s) (shows short version of status log)
 - ### git commit
@@ -38,6 +39,9 @@
   - git log --pretty=format:"%h %ad | %s %d [%an]" --date=short (can use format to format log message style for easier consumption)
 - ### git revert
   - git revert commitHash --no-edit (creates + stages a new commit that exactly inverses the changes instead of deleting the entire commit)
+- ### git restore
+  - git restore fileName (discard uncommitted changes)
+  - git restore --staged fileName (unstage added changes)
 - ### git reset 
   - git reset --soft (puts future changes into staged mode)
   - git reset --hard (destroyed all changes and sets back to head)
