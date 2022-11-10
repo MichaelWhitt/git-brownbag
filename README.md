@@ -7,6 +7,7 @@
   - git branch -r /--remotes (get remote branch list)
 - ### git add
   - git add . --dry-run (does a test run of add but makes no changes)
+  - git add --patch  (or -p, allows you to choose which hunk to add to staging among other options)
 - ### git status
   - git status -short (or -s) (shows short version of status log)
 - ### git commit
@@ -38,6 +39,9 @@
   - git log --pretty=format:"%h %ad | %s %d [%an]" --date=short (can use format to format log message style for easier consumption)
 - ### git revert
   - git revert commitHash --no-edit (creates + stages a new commit that exactly inverses the changes instead of deleting the entire commit)
+- ### git restore
+  - git restore fileName (discard uncommitted changes)
+  - git restore --staged fileName (unstage added changes)
 - ### git reset 
   - git reset --soft (puts future changes into staged mode)
   - git reset --hard (destroyed all changes and sets back to head)
@@ -49,7 +53,7 @@
   - stores all the most recent changes in a workspace in a stash (array) and resets the state of the workspace to the prior commit state
   - git stash (equivalent to git stash push, takes current working directory changes and places them in your stash at stash@{0})
   - git stash list (lists stash entries) 
-  - git stash show -p stash@{0} (most recent is stash{0}, next oldest stash@{1}, next oldest stash@{2} etc.)
+  - git stash show -p stash@{0} (most recent is stash@{0}, next oldest stash@{1}, next oldest stash@{2} etc.)
   - git stash drop stash@{1} (removes the 2nd entry in the stash array from the stash)
   - git stash pop (by default, takes the most recent stash item (stash@{0}) and adds it to unstaged in current branch) 
     - git stash pop stash@{num} (Takes specific stash entry and adds it to unstaged on current branch)
@@ -60,7 +64,7 @@
 - ### git aliases
   - A way to truncate and customize git commands with or without options (for example, "git upstream" would run "git --set-upstream origin branchName")
   - #### Two ways to create aliases:
-    - run this command to find your .gitconfig path: git config --list --show-origin (mine was here -> C:/Users/username/.gitconfig)
+    - run this command to find your .gitconfig path: git config --list --show-origin (Windows Default -> C:/Users/username/.gitconfig)
       - open the file, find the [alias] code block or create it, and then type nameOfShortcut = actual command
       - ie. [alias] l = log --oneline
     - run git config --global alias.shortcutName "actual name of command" 
