@@ -12,6 +12,7 @@
   - git status -short (or -s) (shows short version of status log)
 - ### git commit
   - git commit --amend -m 'my new msg' (amends the most recent commit message)
+  - git commit --amend --no-edit (adds a new change to the most recent commit without creating a new one)
 - ### git push 
   - git push --prune (removes remote branches if they don't exist on remote repo)
   - git push --dry-run (does a test run of add but makes no changes)
