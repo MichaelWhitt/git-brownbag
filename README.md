@@ -1,7 +1,7 @@
 ## Git Brownbag
 
 
-- ### git's index, worktree, repository
+- ### git's worktree, index, and repository
 - ### git branch
   - git branch --sort=-committerdate (sorts branches by most recent commit activity)
   - git branch -r (or --remotes) (get remote branch list)
