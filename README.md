@@ -40,6 +40,7 @@
   - git log --oneline (limits each log entry to one line and reduces / abbreviates information shown)
   - git log -p commitHash (shows logs with actual file changes starting from commitHash)
   - git log --abbrev-commit (abbreviates the commit hash)
+  - git log --after=nov7 --before=nov9 (shows log history between 11/7/22 and 11/9/22)
   - git log --grep='text to search' (searches log for commit messages containing 'text to search')
   - git log --reverse (reverses the log output direction, shows oldest log entry first)
   - git log --pretty="%h %ad | %s %d [%an]" --date=short (can use --pretty to format log message style for easier consumption)
