@@ -6,7 +6,7 @@
   - git branch --sort=-committerdate (sorts branches by most recent commit activity)
   - git branch -r (or --remotes) (get remote branch list)
 - ### git add
-  - git add . --dry-run (does a test run of add but makes no changes)1
+  - git add . --dry-run (does a test run of add but makes no changes)
   - git add --patch (or -p, allows you to choose which hunk to add to staging among other options)
 - ### git status
   - git status -short (or -s) (shows short version of status log)
