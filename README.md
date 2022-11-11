@@ -42,7 +42,7 @@
 - ### git revert
   - git revert commitHash --no-edit (creates + stages a new commit that exactly inverses the changes instead of deleting the entire commit)
 - ### git restore
-  - git restore fileName (discard uncommitted changes)
+  - git restore file/path.js (discard uncommitted changes)
   - git restore --staged fileName (unstage added changes) new change
 - ### git reset 
   - git reset (by default with no options or hash, unstages staged files and places them in working tree, same as --mixed) 
