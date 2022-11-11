@@ -3,17 +3,20 @@
 
 - ### git's worktree, index, and repository
 - ### git branch
+  - git branch (default with no options shows local branches only in alphabetical order)
   - git branch --sort=-committerdate (sorts branches by most recent commit activity)
   - git branch -r (or --remotes) (get remote branch list)
+  - git branch -a (--all) (shows all remote and local branches)
 - ### git add
   - git add . --dry-run (does a test run of add but makes no changes)
   - git add --patch (or -p, allows you to choose which hunk to add to staging among other options)
 - ### git status
   - git status -short (or -s) (shows short version of status log)
 - ### git commit
-  - git commit --amend -m 'my new msg' (amends the most recent commit message)
-  - git commit --amend --no-edit (adds a new change to the most recent commit without creating a new one)
-    - best to use --amend only on local repo to avoid conflicts
+  - git commit --amend -m 'my new msg' (amends the most recent commit message by replacing it with a new commit)
+  - git commit --amend --no-edit (adds a new change to the most recent commit by replacing it with a new commit)
+    - ONLY use --amend on local repo to avoid conflicts!
+    - Old commits are still available but not listed in the log
 - ### git push 
   - git push --prune (removes remote branches if they don't exist on remote repo)
   - git push --dry-run (does a test run of add but makes no changes)
