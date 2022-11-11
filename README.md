@@ -45,7 +45,8 @@
   - git restore --staged fileName (unstage added changes)
 - ### git reset 
   - git reset --soft commitHash (puts commits made after commitHash into staged mode)
-  - git reset --hard (destroyed all changes and sets back to head)
+  - git reset --hard commitHash 
+    - (by default without commitHash, takes you back to local HEAD {last commit on current branch}. With it, takes you back to commitHash and clean working tree)
 - ### git diff 
   - git diff --cached (shows diff for staged changes instead of only unstaged ones)
 - ### git show
