@@ -34,7 +34,7 @@
 - ### git log
   - git log -numAmount (limits # of logs shown)
   - git log --oneline (limits each log entry to one line and reduces / abbreviates information shown)
-  - git log -u / -p (shows logs with actual file changes)
+  - git log -p commitHash (shows logs with actual file changes starting from commitHash)
   - git log --abbrev-commit (abbreviates the commit hash)
   - git log --reverse (reverses the log output direction, shows oldest log entry first)
   - git log --pretty=format:"%h %ad | %s %d [%an]" --date=short (can use format to format log message style for easier consumption)
