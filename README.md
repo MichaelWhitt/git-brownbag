@@ -38,7 +38,10 @@
   - git log -p commitHash (shows logs with actual file changes starting from commitHash)
   - git log --abbrev-commit (abbreviates the commit hash)
   - git log --reverse (reverses the log output direction, shows oldest log entry first)
-  - git log --pretty=format:"%h %ad | %s %d [%an]" --date=short (can use format to format log message style for easier consumption)
+  - git log --pretty="%h %ad | %s %d [%an]" --date=short (can use --pretty to format log message style for easier consumption)
+    - adding custom ANSI colors: git log --pretty="%C(colorname)%h %C(colorname)%an"
+      - colors: normal, black, red, green, yellow, blue, magenta, cyan, white
+      - attributes: bold, dim, ul (underline), blink, reverse, for example: git log --pretty='%C(yellow reverse)%h'
 - ### git revert
   - git revert commitHash --no-edit (creates + stages a new commit that exactly inverses the changes instead of deleting the entire commit)
 - ### git restore
@@ -50,8 +53,10 @@
   - git reset --hard commitHash 
     - (by default without commitHash, takes you back to local HEAD {last commit on current branch}. With it, takes you back to commitHash and clean working tree)
 - ### git diff 
+  - git diff (by default, shows unstaged differences in working tree) 
   - git diff --cached (shows diff for staged changes instead of only unstaged ones)
 - ### git show
+  - git show (by default, shows unstaged and staged differences)
   - git show 927850d src/App.js (shows specific commit changes)
 - ### git stash
   - stores all the most recent changes in a workspace in a stash (array) and resets the state of the workspace to the prior commit state
