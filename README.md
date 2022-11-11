@@ -44,6 +44,7 @@
   - git restore fileName (discard uncommitted changes)
   - git restore --staged fileName (unstage added changes)
 - ### git reset 
+  - git reset (by default with no options or hash, unstages staged files and places them in working tree, same as --mixed) 
   - git reset --soft commitHash (puts commits made after commitHash into staged mode)
   - git reset --hard commitHash 
     - (by default without commitHash, takes you back to local HEAD {last commit on current branch}. With it, takes you back to commitHash and clean working tree)
