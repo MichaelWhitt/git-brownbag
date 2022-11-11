@@ -56,7 +56,8 @@
   - git reset (by default with no options or hash, unstages staged files and places them in working tree, same as --mixed) 
   - git reset --soft commitHash (puts commits made after commitHash into staged mode)
   - git reset --hard commitHash 
-    - (by default without commitHash, takes you back to local HEAD {last commit on current branch}. With it, takes you back to commitHash and clean working tree)
+    - by default without commitHash, takes you back to local HEAD {last commit on current branch}. 
+    - With it, takes you back to commitHash and clean working tree, further commits create alternate timeline- branch before changing things
 - ### git diff 
   - git diff (by default, shows unstaged differences in working tree) 
   - git diff --cached (shows diff for staged changes instead of only unstaged ones)
