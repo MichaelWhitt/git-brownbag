@@ -48,7 +48,7 @@
       - colors: normal, black, red, green, yellow, blue, magenta, cyan, white
       - attributes: bold, dim, ul (underline), blink, reverse, for example: git log --pretty='%C(yellow reverse)%h'
 - ### git revert
-  - git revert commitHash --no-edit (creates + stages a new commit that exactly inverses the changes instead of deleting the entire commit)
+  - git revert commitHash --no-edit (creates + stages a new commit that exactly inverses the changes of the commitHash)
 - ### git restore
   - git restore file/path.js (discard uncommitted changes)
   - git restore --staged fileName (unstage added changes) new change
