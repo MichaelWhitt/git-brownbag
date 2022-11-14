@@ -31,7 +31,7 @@
   - git checkout -b (create new branch and switch to it) (this is the old way, git switch does the same thing)
 - ### git fetch 
   - git fetch then git log -p HEAD..origin/main (to view fetched changes, this compares local HEAD to remote)
-  - git fetch --prune origin (removes local branches if they don't exist on remote repo)
+  - git fetch origin branchName && git switch branchName (fetches remote branch that you may not have locally, then switch to it)
 - ### git merge
   - git merge branchName (merges commits from another branch sequentially into your current one)
   - git merge branchName --squash (merges one commit that includes every commit on another branch into yours, and adds to staged)
