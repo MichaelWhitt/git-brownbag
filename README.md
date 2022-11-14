@@ -12,6 +12,8 @@
   - git branch -a (--all) (shows all remote and local branches)
   - git branch -d (--delete) (deletes a local branch)
 - ### git add
+  - git add path/to/fileName (adds a single file to staging area)
+  - git add . (adds all files with changes, that are new, or deleted to staging area) 
   - git add . --dry-run (does a test run of add but makes no changes)
   - git add --patch (or -p, allows you to choose which hunk to add to staging among other options)
 - ### git status
