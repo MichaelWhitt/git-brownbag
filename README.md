@@ -18,7 +18,7 @@
     - ONLY use --amend on local repo to avoid conflicts!
     - Old commits are still available but not listed in the log
 - ### git push 
-  - git push --prune (removes remote branches if they don't exist on remote repo)
+  - git push --prune (removes remote branches if they don't have local counterpart)
   - git push --dry-run (does a test run of add but makes no changes)
 - ### git pull (does git fetch + git merge)
   - git pull --prune (removes local branches if they don't exist on remote repo)
