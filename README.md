@@ -9,6 +9,7 @@
   - git branch --sort=-committerdate (sorts branches by most recent commit activity)
   - git branch -r (or --remotes) (get remote branch list)
   - git branch -a (--all) (shows all remote and local branches)
+  - git branch -d (--delete) (deletes a local branch)
 - ### git add
   - git add . --dry-run (does a test run of add but makes no changes)
   - git add --patch (or -p, allows you to choose which hunk to add to staging among other options)
