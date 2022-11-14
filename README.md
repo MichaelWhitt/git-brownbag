@@ -6,6 +6,7 @@
 - ### git hashes (SHA-1)
 - ### git branch
   - git branch (default with no options shows local branches only in alphabetical order)
+  - git branch myNewBranchName (creates a new branch locally)
   - git branch --sort=-committerdate (sorts branches by most recent commit activity)
   - git branch -r (or --remotes) (get remote branch list)
   - git branch -a (--all) (shows all remote and local branches)
