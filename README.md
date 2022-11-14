@@ -2,6 +2,7 @@
 
 
 - ### git's worktree, index, and repository
+- ### git HEAD
 - ### git branch
   - git branch (default with no options shows local branches only in alphabetical order)
   - git branch --sort=-committerdate (sorts branches by most recent commit activity)
