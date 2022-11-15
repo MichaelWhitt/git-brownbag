@@ -36,6 +36,7 @@
 - ### git switch
   - git switch branchName (switches to branch)
   - git switch -c newBranchName (create new branch and switch to it)  
+  - git switch commitHash --detach (same as git checkout commitHash, moves HEAD to commit hash)
 - ### git fetch 
   - git fetch then git log -p HEAD..origin/main (to view fetched changes, this compares local HEAD to remote)
   - git fetch origin branchName && git switch branchName (fetches remote branch that you may not have locally, then switch to it)
