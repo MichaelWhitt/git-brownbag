@@ -17,6 +17,7 @@
   - git add . --dry-run (does a test run of add but makes no changes)
   - git add --patch (or -p, allows you to choose which hunk to add to staging among other options)
 - ### git status
+  - git status (by default, shows staged and unstaged changes, as well as a local branch vs remote branch comparison)
   - git status --short (or -s) (shows short version of status log)
 - ### git commit
   - git commit --amend -m 'my new msg' (amends the most recent commit message by replacing it with a new commit)
