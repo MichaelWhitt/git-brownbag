@@ -32,6 +32,7 @@
 - ### git checkout
   - git checkout branchName or commitHash (switches to branch or commit hash)
   - git checkout -b (create new branch and switch to it) (this is the old way, git switch does the same thing)
+  - git checkout path/To/File (discards unstaged changes)
 - ### git switch
   - git switch branchName (switches to branch)
   - git switch -c newBranchName (create new branch and switch to it)  
