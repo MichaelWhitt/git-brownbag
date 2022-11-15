@@ -2,7 +2,7 @@
 
 
 - ### git's working directory, index, and repository
-- ### git hashes (SHA-1), branches, and commits
+- ### git hashes (SHA-1)
 - ### git HEAD
 - ### git branch
   - git branch (default with no options shows local branches only in alphabetical order)
