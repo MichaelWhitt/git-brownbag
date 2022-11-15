@@ -29,7 +29,8 @@
   - git commit (commits staged changes). 
     - Without -m option, opens inline vim editor where you can type your message and then save to finally commit.
     - Type 'i' to change to insert mode. type your message, then ctrl + x to bring up menu, ctrl + c to quit, then :wq to quit and save.
-  - git commit -m (skips the editor and allows you to write your message directly)
+  - git commit -m 'my msg' (skips the editor and allows you to write your message directly)
+  - git commit -am 'my msg' (does a git add . && git commit -m "my msg")
   - git commit --amend -m 'my new msg' (amends the most recent commit message by replacing it with a new commit)
   - git commit --amend --no-edit (adds a new change to the most recent commit by replacing it with a new commit)
     - ONLY use --amend on local repo to avoid conflicts!
