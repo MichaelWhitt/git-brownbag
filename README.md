@@ -2,8 +2,8 @@
 
 
 - ### git's working directory, index, and repository
-- ### git HEAD
 - ### git hashes (SHA-1), branches, and commits
+- ### git HEAD
 - ### git branch
   - git branch (default with no options shows local branches only in alphabetical order)
   - git branch myNewBranchName (creates a new branch locally)
@@ -32,15 +32,17 @@
 - ### git checkout
   - git checkout branchName or commitHash (switches to branch or commit hash)
   - git checkout -b (create new branch and switch to it) (this is the old way, git switch does the same thing)
+  - git checkout path/To/File (discards unstaged changes)
+- ### git switch
+  - git switch branchName (switches to branch)
+  - git switch -c newBranchName (create new branch and switch to it)  
+  - git switch commitHash --detach (same as git checkout commitHash, moves HEAD to commit hash)
 - ### git fetch 
   - git fetch then git log -p HEAD..origin/main (to view fetched changes, this compares local HEAD to remote)
   - git fetch origin branchName && git switch branchName (fetches remote branch that you may not have locally, then switch to it)
 - ### git merge
-  - git merge branchName (merges commits from another branch sequentially into your current one)
+  - git merge branchName (merges commits from another branch into your current one)
   - git merge branchName --squash (merges one commit that includes every commit on another branch into yours, and adds to staged)
-- ### git switch
-  - git switch branchName (switches to branch)
-  - git switch -c newBranchName (create new branch and switch to it)
 - ### git log
   - git log -numAmount (limits # of logs shown)
   - git log --oneline (limits each log entry to one line and reduces / abbreviates information shown)
