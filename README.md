@@ -1,7 +1,7 @@
 ## Git Brownbag
 
 
-- ### git's working directory, index, and repositoryy
+- ### git's working directory, index, and repository
 - ### git hashes (SHA-1)
 - ### git HEAD
 - ### git branch
@@ -44,8 +44,8 @@
   - git switch commitHash --detach (same as git checkout commitHash, moves HEAD to commit hash)
 - ### git fetch 
   - git fetch (by default uses origin - downloads objects and refs from one or more repositories)
-  - git fetch then git log -p HEAD..origin/main (to view fetched changes, this compares local HEAD to remote)
   - git fetch origin branchName && git switch branchName (fetches remote branch that you may not have locally, then switch to it)
+  - git fetch then git log -p HEAD..origin/main (to view fetched changes, this compares local HEAD to remote)
 - ### git merge
   - git merge branchName (merges commits from another branch into your current one)
   - git merge branchName --squash (merges one commit that includes every commit on another branch into yours, and adds to staged)
