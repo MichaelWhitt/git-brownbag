@@ -77,7 +77,7 @@
   - git diff (by default, shows unstaged differences in working tree) 
   - git diff --cached (shows diff for staged changes instead of only unstaged ones)
 - ### git show
-  - git show (by default, shows unstaged and staged differences)
+  - git show (by default, shows HEAD commit and changes)
   - git show 927850d src/App.js (shows specific commit changes)
 - ### git stash
   - stores all the most recent changes in a workspace in a stash (array) and resets the state of the workspace to the prior commit state
