@@ -35,6 +35,8 @@
     - ONLY use --amend on local repo to avoid conflicts!
     - Old commits are still available but not listed in the log
 - ### git log
+  - git log (by default, logs a list of commits in chronological order)
+  - git log branchName (logs a list of commits that live on branchName)
   - git log -numAmount (limits # of logs shown)
   - git log --oneline (limits each log entry to one line and reduces / abbreviates information shown)
   - git log -p commitHash (shows logs with actual file changes starting from commitHash)
