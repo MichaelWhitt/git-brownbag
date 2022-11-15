@@ -3,7 +3,7 @@
 
 - ### git's working directory, index, and repository
 - ### git hashes (SHA-1)
-- ### git HEADs
+- ### git HEAD
 - ### git branch
   - git branch (default with no options shows local branches only in alphabetical order)
   - git branch myNewBranchName (creates a new branch locally)
