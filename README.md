@@ -54,7 +54,7 @@
   - git pull --dry-run (does a test run of pull but makes no changes)  
 - ### git checkout
   - git checkout branchName or commitHash (switches to branch or commit hash)
-  - git checkout -b (create new branch and switch to it) (this is the old way, git switch does the same thing)
+  - git checkout -b branchName (create new branch and switch to it) (this is the old way, git switch -c branchName  does the same thing)
   - git checkout path/To/File (discards unstaged changes)
 - ### git switch
   - git switch branchName (switches to branch)
