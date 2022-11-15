@@ -1,7 +1,7 @@
 ## Git Brownbag
 
 
-- ### git's working directory, index, and repository
+- ### git's working directory, index, and repositoryy
 - ### git hashes (SHA-1)
 - ### git HEAD
 - ### git branch
