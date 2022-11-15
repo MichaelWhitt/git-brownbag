@@ -69,7 +69,7 @@
   - git fetch then git log -p HEAD..origin/main (to view fetched changes, this compares local HEAD to remote)
 - ### git merge
   - git merge branchName (merges commits from another branch into your current one)
-  - git merge branchName --squash (merges one commit that includes every commit on another branch into yours, and adds to staged)
+  - git merge branchName --squash (takes all commit(s) changes from branchName and stages them together on current branch)
 - ### git revert
   - git revert commitHash -n (--no-commit, reverts and stages changes without committing them) 
   - git revert commitHash --no-edit (creates a new commit that exactly inverses the changes of the commitHash)
