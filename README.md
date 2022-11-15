@@ -19,6 +19,12 @@
 - ### git status
   - git status (by default, shows staged and unstaged changes, as well as a local branch vs remote branch comparison)
   - git status --short (or -s) (shows short version of status log)
+- ### git diff 
+  - git diff (by default, shows unstaged differences in working tree) 
+  - git diff --cached (shows diff for staged changes instead of only unstaged ones)
+- ### git show
+  - git show (by default, shows HEAD commit log info and code changes)
+  - git show 927850d src/App.js (shows specific commit log and file changes)
 - ### git commit
   - git commit (commits staged changes). 
     - Without -m option, opens inline vim editor where you can type your message and then save to finally commit.
@@ -73,12 +79,6 @@
   - git reset --hard commitHash 
     - by default without commitHash, takes you back to local HEAD {last commit on current branch}. 
     - With it, takes you back to commitHash and clean working tree, further commits create alternate timeline- branch before changing things
-- ### git diff 
-  - git diff (by default, shows unstaged differences in working tree) 
-  - git diff --cached (shows diff for staged changes instead of only unstaged ones)
-- ### git show
-  - git show (by default, shows unstaged and staged differences)
-  - git show 927850d src/App.js (shows specific commit changes)
 - ### git stash
   - stores all the most recent changes in a workspace in a stash (array) and resets the state of the workspace to the prior commit state
   - git stash (equivalent to git stash push, takes current working directory changes and places them in your stash at stash@{0})
