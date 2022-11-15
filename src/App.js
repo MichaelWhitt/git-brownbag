@@ -8,6 +8,8 @@ function App() {
     'git branch',
     'git add',
     'git status',
+    'git diff',
+    'git show',
     'git commit',
     'git push',
     'git pull',
@@ -18,8 +20,6 @@ function App() {
     'git log',
     'git revert',
     'git reset',
-    'git diff',
-    'git show',
     'git stash',
     'git aliases'
   ]
