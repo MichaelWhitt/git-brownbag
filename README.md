@@ -34,6 +34,18 @@
   - git commit --amend --no-edit (adds a new change to the most recent commit by replacing it with a new commit)
     - ONLY use --amend on local repo to avoid conflicts!
     - Old commits are still available but not listed in the log
+- ### git log
+  - git log -numAmount (limits # of logs shown)
+  - git log --oneline (limits each log entry to one line and reduces / abbreviates information shown)
+  - git log -p commitHash (shows logs with actual file changes starting from commitHash)
+  - git log --abbrev-commit (abbreviates the commit hash)
+  - git log --after=nov7 --before=nov9 (shows log history between 11/7/22 and 11/9/22)
+  - git log --grep='text to search' (searches log for commit messages containing 'text to search')
+  - git log --reverse (reverses the log output direction, shows oldest log entry first)
+  - git log --pretty="%h %ad | %s [%an]" --date=short (can use --pretty to format log message style for easier consumption)
+    - adding custom ANSI colors: git log --pretty="%C(colorname)%h %C(colorname)%an"
+      - colors: normal, black, red, green, yellow, blue, magenta, cyan, white
+      - attributes: bold, dim, ul (underline), blink, reverse, for example: git log --pretty='%C(yellow reverse)%h'
 - ### git push 
   - git push --prune (removes remote branches if they don't have local counterpart)
   - git push --dry-run (does a test run of add but makes no changes)
@@ -42,7 +54,7 @@
   - git pull --dry-run (does a test run of pull but makes no changes)  
 - ### git checkout
   - git checkout branchName or commitHash (switches to branch or commit hash)
-  - git checkout -b (create new branch and switch to it) (this is the old way, git switch does the same thing)
+  - git checkout -b branchName (create new branch and switch to it) (this is the old way, git switch -c branchName  does the same thing)
   - git checkout path/To/File (discards unstaged changes)
 - ### git switch
   - git switch branchName (switches to branch)
@@ -55,18 +67,6 @@
 - ### git merge
   - git merge branchName (merges commits from another branch into your current one)
   - git merge branchName --squash (merges one commit that includes every commit on another branch into yours, and adds to staged)
-- ### git log
-  - git log -numAmount (limits # of logs shown)
-  - git log --oneline (limits each log entry to one line and reduces / abbreviates information shown)
-  - git log -p commitHash (shows logs with actual file changes starting from commitHash)
-  - git log --abbrev-commit (abbreviates the commit hash)
-  - git log --after=nov7 --before=nov9 (shows log history between 11/7/22 and 11/9/22)
-  - git log --grep='text to search' (searches log for commit messages containing 'text to search')
-  - git log --reverse (reverses the log output direction, shows oldest log entry first)
-  - git log --pretty="%h %ad | %s %d [%an]" --date=short (can use --pretty to format log message style for easier consumption)
-    - adding custom ANSI colors: git log --pretty="%C(colorname)%h %C(colorname)%an"
-      - colors: normal, black, red, green, yellow, blue, magenta, cyan, white
-      - attributes: bold, dim, ul (underline), blink, reverse, for example: git log --pretty='%C(yellow reverse)%h'
 - ### git revert
   - git revert commitHash -n (--no-commit, reverts and stages changes without committing them) 
   - git revert commitHash --no-edit (creates a new commit that exactly inverses the changes of the commitHash)
