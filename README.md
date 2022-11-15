@@ -20,6 +20,10 @@
   - git status (by default, shows staged and unstaged changes, as well as a local branch vs remote branch comparison)
   - git status --short (or -s) (shows short version of status log)
 - ### git commit
+  - git commit (commits staged changes). 
+    - Without -m option, opens inline vim editor where you can type your message and then save to finally commit.
+    - Type 'i' to change to insert mode. type your message, then ctrl + x to bring up menu, ctrl + c to quit, then :wq to quit and save.
+  - git commit -m (skips the editor and allows you to write your message directly)
   - git commit --amend -m 'my new msg' (amends the most recent commit message by replacing it with a new commit)
   - git commit --amend --no-edit (adds a new change to the most recent commit by replacing it with a new commit)
     - ONLY use --amend on local repo to avoid conflicts!
