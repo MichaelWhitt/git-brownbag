@@ -104,3 +104,8 @@
     - run git config --global alias.shortcutName "actual name of command" 
       - for example: git config --global alias.upstream "git push -u origin HEAD"
       - now you can use "git upstream" which will run "git push -u origin HEAD" for you  
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Other useful one-liners
+- git rev-list --all --count
+  - diplays total number of commits in your repo
