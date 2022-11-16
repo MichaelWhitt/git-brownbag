@@ -109,3 +109,6 @@
 Other useful one-liners
 - git rev-list --all --count
   - diplays total number of commits in your repo
+- git shortlog
+  - displays every commit with author name
+  - git shortlog -s shows total number of commits by each author
