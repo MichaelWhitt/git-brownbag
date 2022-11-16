@@ -83,7 +83,8 @@
     - by default without commitHash, takes you back to local HEAD {last commit on current branch}. 
     - With it, takes you back to commitHash and clean working tree, further commits create alternate timeline- branch before changing things
 - ### git stash
-  - stores all the most recent changes in a workspace in a stash (array) and resets the state of the workspace to the prior commit state
+  - stores all the most recent changes in a stash (array) and resets the state of the workspace to the prior commit state
+    - by default, does not stash untracked files (ie new files that are not yet tracked by git)
   - your stash stays the same between all branches on your repo, so you can stash on one branch and use it on another branch
   - git stash (equivalent to git stash push, takes current working directory changes and places them in your stash at stash@{0})
   - git stash list (lists stash entries) 
