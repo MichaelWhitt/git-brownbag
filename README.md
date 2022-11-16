@@ -95,7 +95,7 @@
   - git stash clear (completely clears out your stash, removes all entries with no warning!)
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
-- ### git aliases
+## git aliases
   - A way to truncate and customize git commands with or without options (for example, "git upstream" would run "git --set-upstream origin branchName")
   - #### Two ways to create aliases:
     - run this command to find your .gitconfig path: git config --list --show-origin (Windows Default -> C:/Users/username/.gitconfig)
@@ -106,7 +106,7 @@
       - now you can use "git upstream" which will run "git push -u origin HEAD" for you  
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
-Other useful one-liners
+## Other useful one-liners
 - git rev-list --all --count
   - diplays total number of commits in your repo
 - git shortlog
