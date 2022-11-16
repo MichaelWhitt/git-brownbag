@@ -84,6 +84,7 @@
     - With it, takes you back to commitHash and clean working tree, further commits create alternate timeline- branch before changing things
 - ### git stash
   - stores all the most recent changes in a workspace in a stash (array) and resets the state of the workspace to the prior commit state
+  - your stash stays the same between all branches on your repo, so you can stash on one branch and use it on another branch
   - git stash (equivalent to git stash push, takes current working directory changes and places them in your stash at stash@{0})
   - git stash list (lists stash entries) 
   - git stash show -p stash@{0} (most recent is stash@{0}, next oldest stash@{1}, next oldest stash@{2} etc.)
