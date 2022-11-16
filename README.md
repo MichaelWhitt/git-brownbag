@@ -1,9 +1,8 @@
 ## Git Brownbag
 
 
-- ### git's working directory, index, and repository
+- ### git's working directory, index, and repository || Git "HEAD" / tip
 - ### git hashes (SHA-1)
-- ### git HEAD
 - ### git branch
   - git branch (default with no options shows local branches only in alphabetical order)
   - git branch myNewBranchName (creates a new branch locally)
@@ -83,7 +82,8 @@
     - by default without commitHash, takes you back to local HEAD {last commit on current branch}. 
     - With it, takes you back to commitHash and clean working tree, further commits create alternate timeline- branch before changing things
 - ### git stash
-  - stores all the most recent changes in a workspace in a stash (array) and resets the state of the workspace to the prior commit state
+  - stores all the most recent changes in a stash (array) and resets the state of the workspace to the prior commit state
+    - by default, does not stash untracked files (ie new files that are not yet tracked by git)
   - your stash stays the same between all branches on your repo, so you can stash on one branch and use it on another branch
   - git stash (equivalent to git stash push, takes current working directory changes and places them in your stash at stash@{0})
   - git stash list (lists stash entries) 
@@ -95,7 +95,7 @@
   - git stash clear (completely clears out your stash, removes all entries with no warning!)
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
-- ### git aliases
+## git aliases
   - A way to truncate and customize git commands with or without options (for example, "git upstream" would run "git --set-upstream origin branchName")
   - #### Two ways to create aliases:
     - run this command to find your .gitconfig path: git config --list --show-origin (Windows Default -> C:/Users/username/.gitconfig)
@@ -104,3 +104,11 @@
     - run git config --global alias.shortcutName "actual name of command" 
       - for example: git config --global alias.upstream "git push -u origin HEAD"
       - now you can use "git upstream" which will run "git push -u origin HEAD" for you  
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+## Other useful one-liners
+- git rev-list --all --count
+  - diplays total number of commits in your repo
+- git shortlog
+  - displays every commit with author name
+  - git shortlog -s shows total number of commits by each author
